@@ -23,7 +23,17 @@ const cards = [
 
 export default function Audience() {
   return (
-    <section className="section" id="audience">
+    <section className="section" id="audience" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        backgroundImage: "url('/audience-bg.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 40%',
+        opacity: 0.08,
+        zIndex: 0,
+      }} />
+      <div style={{ position: 'relative', zIndex: 1 }}>
       <div className="section-inner">
         <div className="section-tag">Who Should Apply</div>
         <h2>Built for Australian ministries<br />ready to go further.</h2>
@@ -44,6 +54,7 @@ export default function Audience() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   )
