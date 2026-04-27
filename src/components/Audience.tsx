@@ -30,7 +30,7 @@ export default function Audience() {
         backgroundImage: "url('/audience-bg.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 40%',
-        opacity: 0.08,
+        opacity: 0.18,
         zIndex: 0,
       }} />
       <div style={{ position: 'relative', zIndex: 1 }}>
