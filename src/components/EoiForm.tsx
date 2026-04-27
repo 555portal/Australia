@@ -99,7 +99,7 @@ export default function EoiForm() {
               <select id="orgType" name="orgType" required defaultValue="">
                 <option value="" disabled>Select one</option>
                 <option>Church</option>
-                <option>Parachurch Organisation</option>
+                <option>Ministry Organisation</option>
                 <option>Other Ministry</option>
               </select>
             </div>

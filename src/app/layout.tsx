@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Digital Pathways for Australian Ministries — MII',
+  title: 'Australia Kingdom Growth Initiative — MII',
   description: 'A world-class, year-long program equipping Australian churches and parachurch organisations with the training, technology, and coaching to reach, engage, and disciple people online.',
   openGraph: {
-    title: 'Digital Pathways for Australian Ministries — MII',
+    title: 'Australia Kingdom Growth Initiative — MII',
     description: 'Transform your digital ministry in one year. Register your expression of interest for the 2026 cohort.',
     url: 'https://mii.global',
     siteName: 'Media Impact International',

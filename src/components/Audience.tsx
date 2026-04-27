@@ -1,7 +1,7 @@
 const cards = [
   {
     title: 'Churches',
-    body: "Whether you're just beginning your digital journey or bringing greater intentionality to existing efforts, this program gives your team the tools and support to see real gospel impact online.",
+    body: "Bringing greater intentionality to existing evangelism efforts, this program gives your team the tools and support to see real gospel impact online.",
     items: [
       'Reach beyond your existing congregation',
       'Turn digital content into a discipleship pathway',
@@ -10,7 +10,7 @@ const cards = [
     ],
   },
   {
-    title: 'Parachurch Organisations',
+    title: 'Ministry Organisations',
     body: 'Your mission is already clear. This program gives you the digital infrastructure to extend your reach, respond to those who engage, and connect them with local Christian community.',
     items: [
       'Amplify your existing mission online',
