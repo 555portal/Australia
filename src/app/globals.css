@@ -256,6 +256,61 @@ h2 {
   max-width: 640px;
 }
 
+/* ── STATS SECTION ── */
+.stats-section {
+  background: var(--navy-dark);
+  padding: 72px 60px;
+  border-top: 3px solid var(--blue);
+  border-bottom: 3px solid var(--blue);
+}
+
+.stats-section-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blue-bright);
+  margin-bottom: 12px;
+}
+
+.stats-section-lead {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+
+.stats-section-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+}
+
+.stats-section-item {
+  padding: 28px 24px;
+  background: rgba(255,255,255,0.04);
+  border-top: 3px solid var(--blue);
+}
+
+.stats-section-num {
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.stats-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.4;
+}
+
 /* ── PILLARS ── */
 .pillars {
   background: var(--navy);
@@ -273,23 +328,32 @@ h2 {
 }
 
 .pillar {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.08);
   padding: 44px 32px;
   position: relative;
   transition: background 0.25s;
-  border-top: 3px solid transparent;
+  border-top: 3px solid var(--blue);
 }
 .pillar:hover {
-  background: rgba(255,255,255,0.09);
-  border-top-color: var(--blue);
+  background: rgba(255,255,255,0.13);
 }
 
 .pillar-num {
   font-size: 48px;
   font-weight: 900;
-  color: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.08);
   line-height: 1;
   margin-bottom: 16px;
+}
+
+.pillar-benefit {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  line-height: 1.4;
 }
 
 .pillar h3 {
@@ -304,7 +368,88 @@ h2 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.8;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.55);
+}
+
+/* ── SCRIPTURE ── */
+.scripture {
+  border-left: 4px solid var(--blue);
+  padding: 20px 28px;
+  margin: 40px 0 48px;
+  background: var(--off-white);
+}
+
+.scripture p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--navy);
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.scripture cite {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+  font-style: normal;
+}
+
+/* ── JOURNEY DIAGRAM ── */
+.journey {
+  margin-bottom: 48px;
+}
+
+.journey-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.journey-steps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.journey-step-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.journey-step {
+  background: var(--navy);
+  padding: 16px 20px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.journey-step-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.journey-step-desc {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue-bright);
+}
+
+.journey-arrow {
+  font-size: 20px;
+  color: var(--blue);
+  padding: 0 8px;
+  font-weight: 700;
 }
 
 /* ── AUDIENCE ── */
@@ -664,4 +809,9 @@ h1 { animation-delay: 0.22s; }
   .eoi { padding: 60px 24px; }
   .form-row { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 20px; padding: 28px 24px; }
+  .stats-section { padding: 60px 24px; }
+  .stats-section-grid { grid-template-columns: 1fr 1fr; gap: 3px; }
+  .journey-steps { gap: 4px; }
+  .journey-step { min-width: 90px; padding: 12px 10px; }
+  .journey-arrow { padding: 0 4px; font-size: 16px; }
 }

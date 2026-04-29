@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import Stats from '@/components/Stats'
 import Pillars from '@/components/Pillars'
 import Audience from '@/components/Audience'
 import Partnership from '@/components/Partnership'
@@ -13,6 +14,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <About />
+      <Stats />
       <Pillars />
       <Audience />
       <Partnership />

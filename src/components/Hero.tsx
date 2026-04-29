@@ -6,16 +6,15 @@ export default function Hero() {
       <div className="hero-bg" />
       <div className="hero-overlay" />
       <div className="hero-body">
-        <div className="eyebrow">Australia Kingdom Growth Initiative - 2026 Cohort</div>
+        <div className="eyebrow">Australia Kingdom Growth Initiative — 2026 Cohort</div>
         <h1>
           Transform Your<br />
           <span className="accent">Digital Ministry</span><br />
           in One Year.
         </h1>
         <p className="hero-sub">
-          A world-class, year-long program equipping Australian churches and ministry organisations
-          with the training, technology, and coaching to reach, engage, and disciple people online
-          &mdash; at a scale you could never resource alone.
+          Your digital outreach is reaching people. This program helps you respond,
+          disciple, and connect them to real Christian community.
         </p>
         <div className="hero-actions">
           <Link href="#eoi" className="btn-primary">Register Your Interest</Link>
