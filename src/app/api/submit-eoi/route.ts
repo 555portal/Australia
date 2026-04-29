@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #f4f6f9; padding: 32px;">
           <div style="background: #022F5D; padding: 24px 32px; margin-bottom: 0;">
             <h1 style="color: white; font-size: 20px; margin: 0; font-weight: 700;">New Expression of Interest</h1>
-            <p style="color: rgba(255,255,255,0.6); font-size: 13px; margin: 4px 0 0;">Digital Pathways for Australian Ministries — 2026 Cohort</p>
+            <p style="color: rgba(255,255,255,0.6); font-size: 13px; margin: 4px 0 0;">Australia Kingdom Growth Initiative — 2026 Cohort</p>
           </div>
 
           <div style="background: white; padding: 32px; border-left: 4px solid #1877F2;">
