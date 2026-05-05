@@ -63,7 +63,7 @@ export default function EoiForm() {
         backgroundImage: "url('/eoi-bg.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center 40%',
-        opacity: 0.12,
+        opacity: 0.28,
         zIndex: 0,
       }} />
       <div className="eoi-inner">
