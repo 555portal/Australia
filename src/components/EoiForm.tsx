@@ -56,7 +56,16 @@ export default function EoiForm() {
   }
 
   return (
-    <section className="eoi" id="eoi">
+    <section className="eoi" id="eoi" style={{ position: 'relative' }}>
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        backgroundImage: "url('/eoi-bg.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 40%',
+        opacity: 0.12,
+        zIndex: 0,
+      }} />
       <div className="eoi-inner">
         <div className="section-tag">Expression of Interest</div>
         <h2>Ready to take the next step?</h2>
