@@ -1,5 +1,5 @@
 const stats = [
-  { num: '390+', label: 'Indigenous Partners Equipped' },
+  { num: '390+', label: 'Partners Equipped' },
   { num: '5.5M+', label: 'Unique Responders Engaged' },
   { num: '17,394', label: 'Joined Christian Community' },
   { num: '8', label: 'International Follow-Up Centres' },
