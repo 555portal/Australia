@@ -8,8 +8,18 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="stats-section">
+    <section className="stats-section" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        backgroundImage: "url('/stats-bg.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        opacity: 0.15,
+        zIndex: 0,
+      }} />
       <div className="section-inner">
+        <div style={{ position: 'relative', zIndex: 1 }}>
         <div className="stats-section-tag">A Decade of Proven Impact</div>
         <p className="stats-section-lead">
           MII has spent more than ten years building the infrastructure, training, and relationships
@@ -22,6 +32,7 @@ export default function Stats() {
               <div className="stats-section-label">{s.label}</div>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>
