@@ -9,8 +9,7 @@ export default function Hero() {
         <div className="eyebrow">Australia Kingdom Growth Initiative — 2026 Cohort</div>
         <h1>
           Transform Your<br />
-          <span className="accent">Digital Ministry</span><br />
-          in One Year.
+          <span className="accent">Digital Ministry</span>
         </h1>
         <p className="hero-sub">
           Your digital outreach is reaching people. This program helps you respond,
