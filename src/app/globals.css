@@ -1035,6 +1035,14 @@ h1 { animation-delay: 0.22s; }
   max-width: 760px;
 }
 
+.workshop-hero-body .eyebrow {
+  font-size: 13px;
+}
+
+.workshop-hero-body .eyebrow::before {
+  display: none;
+}
+
 .workshop-hero-stats {
   position: relative;
   z-index: 3;

@@ -65,7 +65,7 @@ export default function JulyWorkshop() {
         <div className="workshop-hero-bg" />
         <div className="workshop-hero-overlay" />
         <div className="workshop-hero-body">
-          <div className="eyebrow">Melbourne, Australia — July 21–23, 2026</div>
+          <div className="eyebrow">Melbourne, Australia &nbsp;·&nbsp; July 21–23, 2026</div>
           <h1>
             Digital Evangelism<br />
             <span className="accent">Workshop</span>
