@@ -58,7 +58,7 @@ const ministryItems = [
 export default function JulyWorkshop() {
   return (
     <>
-      <Nav />
+      <Nav showCta={false} />
 
       {/* HERO */}
       <section className="workshop-hero">
