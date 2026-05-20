@@ -101,7 +101,6 @@ export default function JulyWorkshop() {
 
       {/* OVERVIEW */}
       <section className="section workshop-overview-section" style={{ position: 'relative', overflow: 'hidden' }}>
-        <div className="workshop-section-bg" style={{ backgroundImage: "url('/audience-bg.jpg')" }} />
         <div className="section-inner">
           <div className="section-tag">About the Workshop</div>
           <h2>Built for Australian ministry leaders.</h2>
@@ -116,7 +115,8 @@ export default function JulyWorkshop() {
       </section>
 
       {/* MII PROVIDES / YOUR MINISTRY BRINGS */}
-      <section className="section" style={{ background: 'var(--off-white)' }}>
+      <section className="section" style={{ position: 'relative', overflow: 'hidden', background: 'var(--off-white)' }}>
+        <div className="workshop-section-bg" style={{ backgroundImage: "url('/melbourne/hosier-lane.jpg')", opacity: 0.12 }} />
         <div className="section-inner">
           <div className="section-tag">Your Role in the Mission</div>
           <h2>What we do together.</h2>
@@ -194,7 +194,7 @@ export default function JulyWorkshop() {
 
       {/* LOGISTICS */}
       <section className="section" style={{ position: 'relative', overflow: 'hidden', background: 'white' }}>
-        <div className="workshop-section-bg" style={{ backgroundImage: "url('/hero.jpg')", opacity: 0.06 }} />
+        <div className="workshop-section-bg" style={{ backgroundImage: "url('/melbourne/mural-lane.jpg')", opacity: 0.18 }} />
         <div className="section-inner">
           <div className="section-tag">Logistics</div>
           <h2>Plan your attendance.</h2>
@@ -230,16 +230,13 @@ export default function JulyWorkshop() {
               </p>
             </div>
             <div className="logistics-card">
-              <div className="logistics-icon">✉️</div>
-              <div className="logistics-label">Register</div>
-              <div className="logistics-value">Express Your Interest</div>
+              <div className="logistics-icon">🍽️</div>
+              <div className="logistics-label">Meals & Accommodation</div>
+              <div className="logistics-value">All Included</div>
               <p className="logistics-desc">
-                Places are limited. Register your expression of interest to secure your spot
-                and receive updates as they become available.
+                All meals and accommodation for the duration of the workshop will be provided,
+                including the opening dinner Tuesday evening and closing dinner Thursday evening.
               </p>
-              <a href="/#eoi" className="btn-primary" style={{ marginTop: '20px', display: 'inline-block', fontSize: '11px', padding: '12px 22px' }}>
-                Register Now
-              </a>
             </div>
           </div>
         </div>
