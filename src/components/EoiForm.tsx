@@ -129,11 +129,7 @@ export default function EoiForm() {
           </div>
 
           <div>
-            <button
-              type="submit"
-              className="btn-submit"
-              disabled={state === 'loading'}
-            >
+            <button type="submit" className="btn-submit" disabled={state === 'loading'}>
               {state === 'loading' ? 'Submitting…' : 'Submit Expression of Interest'}
             </button>
             {state === 'error' && <p className="form-error">{errorMsg}</p>}
