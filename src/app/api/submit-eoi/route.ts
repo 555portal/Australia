@@ -99,7 +99,7 @@ export async function POST(req: NextRequest) {
 
           <div style="padding: 20px 32px; text-align: center;">
             <p style="font-size: 12px; color: #999; margin: 0;">
-              Submitted via mii.global/australia &nbsp;·&nbsp;
+              Submitted via australia.mii.global &nbsp;·&nbsp;
               <a href="mailto:${email}" style="color: #1877F2;">Reply directly to ${firstName}</a>
             </p>
           </div>

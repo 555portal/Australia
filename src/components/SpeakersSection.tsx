@@ -42,7 +42,7 @@ export default function SpeakersSection() {
     <section className="section speakers-section">
       <div className="section-inner">
         <div className="section-tag">Faculty</div>
-        <h2>World-class speakers.</h2>
+        <h2>Industry leading Coaches.</h2>
         <p className="lead">
           Our faculty bring decades of frontline digital ministry experience from around the
           globe. Hover over a speaker to read their bio.
