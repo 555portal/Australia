@@ -167,7 +167,7 @@ export default function JulyWorkshop() {
       </section>
 
       {/* AGENDA */}
-      <section className="section agenda-section" id="agenda" style={{ position: 'relative', overflow: 'hidden' }}>
+      <section className="section agenda-section" id="agenda" style={{ position: 'relative' }}>
         <div className="workshop-section-bg" style={{ backgroundImage: "url('/stats-bg.jpg')", opacity: 0.15 }} />
         <div className="section-inner">
           <div className="section-tag">Program</div>
@@ -176,6 +176,7 @@ export default function JulyWorkshop() {
             Each day is intentionally designed — building on the last to give your team a
             complete, integrated framework for digital ministry.
           </p>
+          <div className="agenda-grid-wrap">
           <div className="agenda-grid">
             {agenda.map((item) => (
               <div className="agenda-item" key={item.date}>
@@ -186,6 +187,7 @@ export default function JulyWorkshop() {
               </div>
             ))}
           </div>
+          </div>
         </div>
       </section>
 
@@ -193,7 +195,7 @@ export default function JulyWorkshop() {
       <SpeakersSection />
 
       {/* LOGISTICS */}
-      <section className="section" style={{ position: 'relative', overflow: 'hidden', background: 'white' }}>
+      <section className="section" style={{ position: 'relative', background: 'white' }}>
         <div className="workshop-section-bg" style={{ backgroundImage: "url('/melbourne/mural-lane.jpg')", opacity: 0.18 }} />
         <div className="section-inner">
           <div className="section-tag">Logistics</div>
@@ -201,6 +203,7 @@ export default function JulyWorkshop() {
           <p className="lead">
             Everything you need to know about attending the Melbourne Workshop.
           </p>
+          <div className="logistics-grid-wrap">
           <div className="logistics-grid">
             <div className="logistics-card">
               <div className="logistics-icon">📍</div>
@@ -238,6 +241,7 @@ export default function JulyWorkshop() {
                 including the opening dinner Tuesday evening and closing dinner Thursday evening.
               </p>
             </div>
+          </div>
           </div>
         </div>
       </section>

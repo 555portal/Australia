@@ -950,14 +950,29 @@ h1 { animation-delay: 0.22s; }
   .journey-step { min-width: 90px; padding: 12px 10px; }
   .journey-arrow { padding: 0 4px; font-size: 16px; }
   .nav-workshop-btn { display: none; }
-  .agenda-grid { grid-template-columns: 1fr; }
+
+  /* ── JULY PAGE MOBILE ── */
+  .workshop-hero { padding: 60px 24px 0; min-height: auto; }
+  .workshop-hero-body { max-width: 100%; }
+  .workshop-hero-body .hero-sub { max-width: 100%; margin-bottom: 32px; }
+  .workshop-hero-body .hero-actions { flex-direction: column; align-items: flex-start; }
+  .workshop-hero-body .btn-primary,
+  .workshop-hero-body .btn-ghost { width: auto; align-self: flex-start; }
+  .workshop-hero-stats { grid-template-columns: 1fr 1fr; overflow: hidden; }
+  .workshop-hero-stats .stat-num { font-size: 17px; }
+  .workshop-hero-stats .stat { padding: 14px 16px; }
+
+  .agenda-grid-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -24px; padding: 0 24px; }
+  .agenda-grid { grid-template-columns: repeat(3, 80vw); }
+
   .speakers-grid-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -24px; padding: 0 24px; }
   .speakers-grid { grid-template-columns: repeat(4, 160px); margin-top: 40px; }
   .speaker-bio-panel { min-height: 80px; padding: 24px 20px; }
-  .logistics-grid { grid-template-columns: 1fr 1fr; }
-  .workshop-hero-stats { grid-template-columns: 1fr 1fr; }
-  .workshop-hero-stats .stat-num { font-size: 18px; }
-  .workshop-hero-stats .stat { padding: 16px 16px; }
+
+  .logistics-grid-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -24px; padding: 0 24px; }
+  .logistics-grid { grid-template-columns: repeat(4, 260px); }
+
+  .attendee-card .form-row { grid-template-columns: 1fr; }
 }
 
 /* ── JULY WORKSHOP PAGE ── */
@@ -1014,6 +1029,7 @@ h1 { animation-delay: 0.22s; }
   background-position: center;
   opacity: 0.12;
   z-index: 0;
+  pointer-events: none;
 }
 
 /* Overview section — light overlay on audience-bg */
