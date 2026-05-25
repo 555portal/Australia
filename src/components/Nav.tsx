@@ -7,7 +7,7 @@ export default function Nav({ showCta = true }: { showCta?: boolean }) {
       <a href="https://australia.mii.global" className="logo">
         <Image src="/logo.png" alt="MII" height={44} width={140} priority />
       </a>
-      {showCta && <Link href="#eoi" className="nav-cta">Express Interest</Link>}
+      {showCta && <Link href="/july" className="nav-cta">July Workshop</Link>}
     </nav>
   )
 }
