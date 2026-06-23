@@ -217,10 +217,13 @@ export default function JulyWorkshop() {
             <div className="logistics-card">
               <div className="logistics-icon">🏛️</div>
               <div className="logistics-label">Venue</div>
-              <div className="logistics-value">To Be Announced</div>
+              <div className="logistics-value">Saints Church</div>
               <p className="logistics-desc">
-                Venue details will be confirmed and shared with registered participants closer to
-                the event date.
+                56 Wilfred Rd, Ivanhoe
+                <br />
+                <a href="https://saints.org.au/" target="_blank" rel="noopener noreferrer">
+                  saints.org.au
+                </a>
               </p>
             </div>
             <div className="logistics-card">
