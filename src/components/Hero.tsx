@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero-bg" />
       <div className="hero-overlay" />
       <div className="hero-body">
-        <div className="eyebrow">Australia Kingdom Growth Initiative — 2026 Cohort</div>
+        <div className="eyebrow">Media Impact International — 2026 Cohort</div>
         <h1>
           Transform Your<br />
           <span className="accent">Digital Ministry</span>
