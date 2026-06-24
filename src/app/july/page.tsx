@@ -67,8 +67,8 @@ export default function JulyWorkshop() {
         <div className="workshop-hero-body">
           <div className="eyebrow">Melbourne, Australia &nbsp;·&nbsp; July 21–23, 2026</div>
           <h1>
-            Digital Evangelism<br />
-            <span className="accent">Workshop</span>
+            Digital Pathways<br />
+            <span className="accent">Summit</span>
           </h1>
           <p className="hero-sub">
             World-class training in digital evangelism, content strategy, and audience
