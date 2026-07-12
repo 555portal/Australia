@@ -15,8 +15,8 @@ const speakers = [
     initials: 'NL',
     photo: '/speakers/natchi-lazarus.jpeg',
     name: 'Natchi Lazarus',
-    role: 'India Initiatives & International Marketing, MII',
-    bio: 'Lazarus manages initiatives in India, as well as MII\'s international marketing efforts. As a social media consultant with more than 18 years of experience in digital marketing, Lazarus specializes in helping nonprofits, NGOs, and faith-based organizations reach and engage their audiences online.',
+    role: 'Senior Coach, International Media & AI Strategy, MII',
+    bio: 'Natchi is a senior coach who oversees international media and AI strategies, along with key India initiatives. He is the author of two books: The Connected Church, and Spirit-led Intelligence. His first book is currently used as a textbook in media studies programs at Christian universities and theological seminaries internationally. His latest book, Spirit-led Intelligence, addresses the critical questions of the Body of Christ related to AI, and offers a Biblical framework on how to live with AI and other future technology. He has 20+ years of international marketing and media experience working with some of the most impactful churches and ministries globally.',
   },
   {
     initials: 'JK',
