@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   description: 'Follow Up Centre registration and resources for Melbourne Workshop attendees.',
 }
 
+const resources = [
+  { speaker: 'Natchi Lazarus', title: 'Digital Pathways to Disciples', file: '01-natchi-digital-pathways.pptx' },
+  { speaker: 'Jay Kranda', title: 'The Online Church', file: '02-jay-online-church.pptx' },
+  { speaker: 'Natchi Lazarus', title: 'Foundations & the Future', file: '03-natchi-foundations-future.pptx' },
+  { speaker: 'Daniel Hall', title: 'How to Talk to Strangers', file: '04-daniel-how-to-talk-to-strangers.pptx' },
+  { speaker: 'Nick Runyon', title: 'Content that Connects', file: '05-content-that-connects.pptx' },
+  { speaker: 'Daniel Hall', title: 'Content Loops', file: '06-daniel-content-loops.pptx' },
+  { speaker: 'Jay Kranda', title: 'Crowd to Core', file: '08-jay-crowd-to-core.pptx' },
+  { speaker: 'Jay Kranda', title: 'Reaching People Online', file: '09-jay-reaching-people.pptx' },
+  { speaker: 'Nick Runyon', title: 'Metrics that Matter', file: '10-nick-metrics-that-matter.pptx' },
+  { speaker: 'Natchi Lazarus', title: 'Agentic AI', file: '13-natchi-agentic-ai.pptx' },
+  { speaker: 'Jay Kranda', title: 'Creating a 4th Space & Online Groups', file: '14-jay-4th-space-online-groups.pptx' },
+  { speaker: 'Nick Runyon', title: 'Online to Offline', file: '15-nick-online-to-offline.pptx' },
+  { speaker: 'Ben Scales', title: 'Follow Up', file: '16-ben-follow-up.pptx' },
+]
+
 export default function JulyWorkshop() {
   return (
     <>
@@ -29,15 +45,38 @@ export default function JulyWorkshop() {
       {/* FOLLOW UP CENTRE REGISTRATION */}
       <FollowUpForm />
 
-      {/* RESOURCES — coming soon */}
-      <section className="section" style={{ background: 'var(--off-white)' }}>
+      {/* RESOURCES */}
+      <section className="section" id="resources" style={{ background: 'var(--off-white)' }}>
         <div className="section-inner">
           <div className="section-tag">Resources</div>
-          <h2>Summit resources.</h2>
+          <h2>Summit presentations.</h2>
           <p className="lead">
-            Slides, transcripts, and other content from the Melbourne Workshop will be shared here
-            shortly. Check back soon.
+            Download the slides from each session at the Melbourne Workshop.
           </p>
+          <div className="resources-grid">
+            {resources.map((r) => (
+              <a
+                key={r.file}
+                href={`/resources/${r.file}`}
+                download
+                className="resource-card"
+              >
+                <div className="resource-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <polyline points="14 2 14 8 20 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <line x1="12" y1="18" x2="12" y2="12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                    <polyline points="9 15 12 18 15 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="resource-body">
+                  <div className="resource-speaker">{r.speaker}</div>
+                  <div className="resource-title">{r.title}</div>
+                </div>
+                <div className="resource-dl">Download</div>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
