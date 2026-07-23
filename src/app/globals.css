@@ -1015,10 +1015,10 @@ h1 { animation-delay: 0.22s; }
 .workshop-hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/melbourne/tram-street.jpg');
+  background-image: url('/workshop-room.jpeg');
   background-size: cover;
-  background-position: center 40%;
-  opacity: 0.45;
+  background-position: center 30%;
+  opacity: 0.55;
   z-index: 0;
 }
 
