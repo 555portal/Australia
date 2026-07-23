@@ -664,6 +664,9 @@ h2 {
 /* ── EOI ── */
 .eoi {
   background: var(--navy-dark);
+  background-image: url('/workshop-room.jpeg');
+  background-size: cover;
+  background-position: center 60%;
   padding: 90px 60px;
   position: relative;
   overflow: hidden;
@@ -672,13 +675,9 @@ h2 {
 .eoi::before {
   content: '';
   position: absolute;
-  bottom: -80px;
-  right: -60px;
-  width: 400px;
-  height: 400px;
-  background: var(--blue);
-  opacity: 0.08;
-  transform: skewY(-8deg);
+  inset: 0;
+  background: rgba(2, 31, 64, 0.88);
+  z-index: 0;
 }
 
 .eoi-inner {
@@ -1015,10 +1014,7 @@ h1 { animation-delay: 0.22s; }
 .workshop-hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/workshop-room.jpeg');
-  background-size: cover;
-  background-position: center 30%;
-  opacity: 0.55;
+  opacity: 0;
   z-index: 0;
 }
 
@@ -1042,7 +1038,7 @@ h1 { animation-delay: 0.22s; }
 .workshop-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(2,47,93,0.92) 0%, rgba(24,119,242,0.15) 100%);
+  background: linear-gradient(to bottom, rgba(2,47,93,0.35) 0%, rgba(2,47,93,0.75) 60%, rgba(2,47,93,1) 100%);
   z-index: 1;
 }
 

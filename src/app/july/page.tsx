@@ -34,11 +34,7 @@ export default function JulyWorkshop() {
         <div className="workshop-hero-bg" />
         <div className="workshop-hero-overlay" />
         <div className="workshop-hero-body" style={{ paddingBottom: '48px' }}>
-          <div className="eyebrow">Melbourne, Australia &nbsp;·&nbsp; July 21–23, 2026</div>
-          <h1>
-            Digital Evangelism<br />
-            <span className="accent">Workshop</span>
-          </h1>
+          <h1 style={{ textTransform: 'uppercase' }}>Digital Pathways</h1>
         </div>
       </section>
 
