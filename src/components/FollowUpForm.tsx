@@ -101,6 +101,7 @@ export default function FollowUpForm() {
           Missionary through the Follow Up Centre.
         </p>
 
+        <div className="form-card">
         <form className="eoi-form" onSubmit={handleSubmit}>
 
           {/* ── MINISTRY CONTACT ── */}
@@ -204,6 +205,7 @@ export default function FollowUpForm() {
           </div>
 
         </form>
+        </div>
       </div>
     </section>
   )
