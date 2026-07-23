@@ -689,6 +689,14 @@ h2 {
 }
 
 .eoi h2 { color: white; }
+.webinar-coming-soon {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue-bright);
+  margin: -8px 0 16px;
+}
 .eoi .section-tag { color: var(--blue-bright); }
 .eoi .lead {
   color: rgba(255,255,255,0.6);
