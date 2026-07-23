@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import FollowUpForm from '@/components/FollowUpForm'
@@ -24,6 +25,20 @@ const resources = [
   { speaker: 'Ben Scales', title: 'Follow Up', file: '16-ben-follow-up.pptx' },
 ]
 
+const galleryPhotos = [
+  'IMG_3579.jpeg',
+  'IMG_3598.jpeg',
+  'IMG_3599.jpeg',
+  'IMG_3606.jpeg',
+  'IMG_3607.jpeg',
+  'IMG_3611.jpeg',
+  'IMG_3613.jpeg',
+  'IMG_3614.jpeg',
+  'IMG_3619.jpeg',
+  'IMG_3621.jpeg',
+  'IMG_3622.jpeg',
+]
+
 export default function JulyWorkshop() {
   return (
     <>
@@ -34,12 +49,34 @@ export default function JulyWorkshop() {
         <div className="workshop-hero-bg" />
         <div className="workshop-hero-overlay" />
         <div className="workshop-hero-body" style={{ paddingBottom: '48px' }}>
-          <h1 style={{ textTransform: 'uppercase' }}>Digital Pathways</h1>
+          <h1 style={{ textTransform: 'uppercase' }}>Building Pathways<br />to Discipleship</h1>
         </div>
       </section>
 
       {/* FOLLOW UP CENTRE REGISTRATION */}
       <FollowUpForm />
+
+      {/* GALLERY */}
+      <section className="section gallery-section">
+        <div className="section-inner">
+          <div className="section-tag">Photos</div>
+          <h2>From the summit.</h2>
+          <div className="gallery-grid">
+            {galleryPhotos.map((photo) => (
+              <div className="gallery-item" key={photo}>
+                <Image
+                  src={`/gallery/${photo}`}
+                  alt="Digital Pathways Summit"
+                  width={800}
+                  height={600}
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                  className="gallery-img"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* RESOURCES */}
       <section className="section" id="resources" style={{ background: 'var(--off-white)' }}>
