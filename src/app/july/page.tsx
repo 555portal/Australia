@@ -38,6 +38,11 @@ const galleryPhotos = [
   'IMG_3621.jpeg',
   'IMG_3622.jpeg',
   'Tim SeeSalt.jpeg',
+  'Hero.jpeg',
+  'IMG_3621 2.jpeg',
+  'IMG_3639.jpeg',
+  'IMG_3640.jpeg',
+  'IMG_5440.jpeg',
 ]
 
 export default function JulyWorkshop() {
