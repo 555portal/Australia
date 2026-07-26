@@ -5,7 +5,7 @@ import Stats from '@/components/Stats'
 import Pillars from '@/components/Pillars'
 import Audience from '@/components/Audience'
 import Partnership from '@/components/Partnership'
-import EoiForm from '@/components/EoiForm'
+import FollowUpForm from '@/components/FollowUpForm'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <Pillars />
       <Audience />
       <Partnership />
-      <EoiForm />
+      <FollowUpForm />
       <Footer />
     </>
   )

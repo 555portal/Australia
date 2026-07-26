@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server'
 export async function POST(req: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY)
   const body = await req.json()
-  const { contact, missionaries = [] } = body
+  const { contact, missionaries = [], webinarDate } = body
   const { firstName, lastName, email, phone, orgName, location } = contact ?? {}
 
   if (!firstName || !lastName || !email || !orgName) {
@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
       from: 'MII EOI <noreply@mii.global>',
       to: 'australia@mii.global',
       replyTo: email,
-      subject: `Follow Up Centre Registration: ${orgName} — ${missionaries.length} Missionary${missionaries.length !== 1 ? 'ies' : 'y'}`,
+      subject: `Follow Up Centre Registration: ${orgName} — ${webinarDate ?? 'No date selected'}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; background: #f4f6f9; padding: 32px;">
           <div style="background: #022F5D; padding: 24px 32px; margin-bottom: 0;">
@@ -60,6 +60,10 @@ export async function POST(req: NextRequest) {
               <tr style="border-bottom: 1px solid #f0f0f0;">
                 <td style="padding: 10px 0; color: #5A6A7A; font-weight: 600;">Location</td>
                 <td style="padding: 10px 0; color: #022F5D;">${location || '—'}</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #f0f0f0;">
+                <td style="padding: 10px 0; color: #5A6A7A; font-weight: 600;">Webinar Date</td>
+                <td style="padding: 10px 0; color: #022F5D; font-weight: 700;">${webinarDate || '—'}</td>
               </tr>
             </table>
 

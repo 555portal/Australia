@@ -35,6 +35,7 @@ export default function FollowUpForm() {
 
   const [missionaries, setMissionaries] = useState<Missionary[]>([emptyMissionary(1)])
   const [nextId, setNextId] = useState(2)
+  const [webinarDate, setWebinarDate] = useState('')
 
   function updateContact(field: string, value: string) {
     setContact((prev) => ({ ...prev, [field]: value }))
@@ -64,7 +65,7 @@ export default function FollowUpForm() {
       const res = await fetch('/api/submit-missionaries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ contact, missionaries }),
+        body: JSON.stringify({ contact, missionaries, webinarDate }),
       })
 
       if (!res.ok) throw new Error('Submission failed')
@@ -95,7 +96,7 @@ export default function FollowUpForm() {
       <div className="eoi-inner" style={{ maxWidth: '780px' }}>
         <div className="section-tag">Follow Up Centre</div>
         <h2>Register your Online Missionaries.</h2>
-        <p className="webinar-coming-soon">Training Webinar coming soon.</p>
+        <p className="webinar-coming-soon">Training Webinar — select a date that works for you.</p>
         <p className="lead">
           Add the details of each person from your ministry who will be serving as an Online
           Missionary through the Follow Up Centre.
@@ -144,6 +145,35 @@ export default function FollowUpForm() {
               <input type="text" placeholder="e.g. Melbourne, VIC"
                 value={contact.location} onChange={(e) => updateContact('location', e.target.value)} />
             </div>
+          </div>
+
+          {/* ── WEBINAR DATE ── */}
+          <div className="form-section-header" style={{ marginTop: '12px' }}>
+            Training Webinar Date
+            <span className="form-section-sub">Select the session that works best for your team.</span>
+          </div>
+          <div className="webinar-date-options">
+            {[
+              { value: 'August 7th — 2:00pm AEST', label: 'August 7th', time: '2:00pm AEST' },
+              { value: 'August 11th — 5:00pm AEST', label: 'August 11th', time: '5:00pm AEST' },
+              { value: 'August 12th — 7:00pm AEST', label: 'August 12th', time: '7:00pm AEST' },
+            ].map((opt) => (
+              <label
+                key={opt.value}
+                className={`webinar-date-option${webinarDate === opt.value ? ' webinar-date-option--selected' : ''}`}
+              >
+                <input
+                  type="radio"
+                  name="webinarDate"
+                  value={opt.value}
+                  checked={webinarDate === opt.value}
+                  onChange={() => setWebinarDate(opt.value)}
+                  required
+                />
+                <span className="webinar-date-label">{opt.label}</span>
+                <span className="webinar-date-time">{opt.time}</span>
+              </label>
+            ))}
           </div>
 
           {/* ── MISSIONARIES ── */}

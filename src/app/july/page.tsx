@@ -2,11 +2,10 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import FollowUpForm from '@/components/FollowUpForm'
 
 export const metadata: Metadata = {
   title: 'Melbourne Workshop — July 21–23 | MII Australia',
-  description: 'Follow Up Centre registration and resources for Melbourne Workshop attendees.',
+  description: 'Photos and resources from the Melbourne Digital Pathways Summit.',
 }
 
 const resources = [
@@ -36,13 +35,13 @@ const galleryPhotos = [
   'IMG_3614.jpeg',
   'IMG_3619.jpeg',
   'IMG_3621.jpeg',
-  'IMG_3622.jpeg',
-  'tim-seesalt.jpeg',
-  'hero.jpeg',
   'IMG_3621-2.jpeg',
+  'IMG_3622.jpeg',
   'IMG_3639.jpeg',
   'IMG_3640.jpeg',
   'IMG_5440.jpeg',
+  'tim-seesalt.jpeg',
+  'hero.jpeg',
 ]
 
 export default function JulyWorkshop() {
@@ -58,9 +57,6 @@ export default function JulyWorkshop() {
           <h1 style={{ textTransform: 'uppercase' }}>Building Pathways<br />to Discipleship</h1>
         </div>
       </section>
-
-      {/* FOLLOW UP CENTRE REGISTRATION */}
-      <FollowUpForm />
 
       {/* GALLERY */}
       <section className="section gallery-section">
