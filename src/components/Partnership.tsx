@@ -2,7 +2,7 @@ const miiItems = [
   {
     num: '1',
     title: '3-Day Intensive Workshop',
-    body: 'World-class training in digital evangelism, content strategy, persona development, brand voice, AI in ministry, and audience engagement — delivered by global experts in Melbourne July 21–23.',
+    body: 'World-class training in digital evangelism, content strategy, persona development, brand voice, AI in ministry, and audience engagement — delivered by global experts.',
   },
   {
     num: '2',

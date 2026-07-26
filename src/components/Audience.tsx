@@ -35,11 +35,11 @@ export default function Audience() {
       }} />
       <div style={{ position: 'relative', zIndex: 1 }}>
       <div className="section-inner">
-        <div className="section-tag">Who Should Apply</div>
+        <div className="section-tag">Who We Work With</div>
         <h2>Built for Australian ministries<br />ready to go further.</h2>
         <p className="lead">
-          Places are limited and subject to a brief assessment to ensure the program is the right
-          fit for your organisation and context.
+          MII partners with churches and ministry organisations committed to turning digital reach
+          into lasting discipleship.
         </p>
         <div className="audience-grid">
           {cards.map((card) => (

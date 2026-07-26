@@ -3,7 +3,7 @@ const pillars = [
     num: '01',
     benefit: 'Train your whole team in digital evangelism',
     title: 'Expert Training in Digital Evangelism',
-    body: "A 3-day intensive workshop in Melbourne, July 21–23, led by MII's global team of digital ministry specialists. Covering strategy, content, advertising, persona development, and how to reach your specific mission field online.",
+    body: "A 3-day intensive workshop led by MII's global team of digital ministry specialists. Covering strategy, content, advertising, persona development, and how to reach your specific mission field online.",
   },
   {
     num: '02',
@@ -23,11 +23,11 @@ export default function Pillars() {
   return (
     <section className="pillars" id="pillars">
       <div className="section-inner">
-        <div className="section-tag">What You&rsquo;ll Receive</div>
+        <div className="section-tag">The Program</div>
         <h2>Three pillars. One integrated pathway.</h2>
         <p className="lead">
-          Each component is designed to work together &mdash; so you&rsquo;re not just learning
-          about digital ministry, you&rsquo;re actually doing it, with support every step of the way.
+          Each component is designed to work together — training, platform, and follow-up — so
+          digital outreach leads to real discipleship.
         </p>
         <div className="pillars-grid">
           {pillars.map((p) => (

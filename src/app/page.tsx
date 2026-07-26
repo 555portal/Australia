@@ -12,13 +12,12 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <Hero />
+      <FollowUpForm />
       <About />
       <Stats />
       <Pillars />
       <Audience />
       <Partnership />
-      <FollowUpForm />
       <Footer />
     </>
   )
