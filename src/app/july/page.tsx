@@ -54,9 +54,9 @@ export default function JulyWorkshop() {
       <section className="workshop-hero" style={{ minHeight: '280px' }}>
         <div className="workshop-hero-bg" />
         <div className="workshop-hero-overlay" />
+        <Link href="/" className="register-followup-btn">Register Follow Up</Link>
         <div className="workshop-hero-body" style={{ paddingBottom: '48px' }}>
           <h1>Digital Pathways Summit 2026</h1>
-          <Link href="/" className="register-followup-btn">Register Follow Up</Link>
         </div>
       </section>
 
