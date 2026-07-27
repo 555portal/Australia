@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
@@ -55,6 +56,7 @@ export default function JulyWorkshop() {
         <div className="workshop-hero-overlay" />
         <div className="workshop-hero-body" style={{ paddingBottom: '48px' }}>
           <h1>Digital Pathways Summit 2026</h1>
+          <Link href="/" className="register-followup-btn">Register Follow Up</Link>
         </div>
       </section>
 
