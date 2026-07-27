@@ -54,7 +54,7 @@ export default function JulyWorkshop() {
         <div className="workshop-hero-bg" />
         <div className="workshop-hero-overlay" />
         <div className="workshop-hero-body" style={{ paddingBottom: '48px' }}>
-          <h1 style={{ textTransform: 'uppercase' }}>Building Pathways<br />to Discipleship</h1>
+          <h1>Digital Pathways Summit 2026</h1>
         </div>
       </section>
 
