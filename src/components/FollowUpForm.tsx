@@ -95,7 +95,7 @@ export default function FollowUpForm() {
     <section className="eoi" id="register">
       <div className="eoi-inner" style={{ maxWidth: '780px' }}>
         <div className="section-tag">Follow Up Centre</div>
-        <h2>Register your Online Missionaries.</h2>
+        <h2>Register your Echo Users.</h2>
         <p className="webinar-coming-soon">Training Webinar — select a date that works for you.</p>
         <p className="lead">
           Add the details of each person from your ministry who will be serving as an Online
