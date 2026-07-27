@@ -1379,27 +1379,6 @@ h1 { animation-delay: 0.22s; }
 }
 
 /* ── GALLERY ── */
-.register-followup-btn {
-  position: absolute;
-  top: 28px;
-  right: 40px;
-  z-index: 10;
-  display: inline-block;
-  padding: 12px 28px;
-  background: #4a90d9;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  border-radius: 4px;
-  letter-spacing: 0.02em;
-  transition: background 0.2s ease;
-}
-
-.register-followup-btn:hover {
-  background: #357abd;
-}
-
 .gallery-section { background: white; }
 
 .gallery-grid {
