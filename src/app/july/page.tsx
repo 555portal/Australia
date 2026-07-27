@@ -25,6 +25,7 @@ const resources = [
 ]
 
 const galleryPhotos = [
+  'hero.jpeg',
   'IMG_3579.jpeg',
   'IMG_3598.jpeg',
   'IMG_3599.jpeg',
@@ -41,7 +42,6 @@ const galleryPhotos = [
   'IMG_3640.jpeg',
   'IMG_5440.jpeg',
   'tim-seesalt.jpeg',
-  'hero.jpeg',
 ]
 
 export default function JulyWorkshop() {
