@@ -99,7 +99,7 @@ export default function FollowUpForm() {
         <p className="webinar-coming-soon">Training Webinar — select a date that works for you.</p>
         <p className="lead">
           Add the details of each person from your ministry who will be serving as an Online
-          Missionary through the Follow Up Centre.
+          Missionary (Echo User) through the Follow Up Centre.
         </p>
 
         <div className="form-card">
@@ -185,7 +185,7 @@ export default function FollowUpForm() {
           {missionaries.map((m, index) => (
             <div className="attendee-card" key={m.id}>
               <div className="attendee-card-header">
-                <span className="attendee-label">Missionary {index + 1}</span>
+                <span className="attendee-label">Echo User {index + 1}</span>
                 {missionaries.length > 1 && (
                   <button type="button" className="attendee-remove" onClick={() => removeMissionary(m.id)}>
                     Remove
@@ -222,7 +222,7 @@ export default function FollowUpForm() {
           ))}
 
           <button type="button" className="btn-add-attendee" onClick={addMissionary}>
-            + Add Another Missionary
+            + Add Another Echo User
           </button>
 
           {/* ── SUBMIT ── */}
