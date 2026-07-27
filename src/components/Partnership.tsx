@@ -1,7 +1,7 @@
 const miiItems = [
   {
     num: '1',
-    title: '3-Day Intensive Workshop',
+    title: 'Expert Training in Digital Evangelism',
     body: 'World-class training in digital evangelism, content strategy, persona development, brand voice, AI in ministry, and audience engagement — delivered by global experts.',
   },
   {
@@ -17,7 +17,7 @@ const miiItems = [
 ]
 
 const ministryItems = [
-  'Committed to the full 3-day workshop',
+  'Committed to ongoing digital ministry training',
   'Available for monthly digital coaching sessions',
   '3–20 volunteers or staff for the Follow-Up Centre',
   'Heart for one-on-one discipleship and follow-up',
