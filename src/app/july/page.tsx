@@ -41,7 +41,6 @@ const galleryPhotos = [
   'IMG_3639.jpeg',
   'IMG_3640.jpeg',
   'IMG_5440.jpeg',
-  'tim-seesalt.jpeg',
 ]
 
 export default function JulyWorkshop() {
