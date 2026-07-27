@@ -17,7 +17,7 @@ const miiItems = [
 ]
 
 const ministryItems = [
-  'Committed to ongoing digital ministry training',
+  'Committed to training',
   'Available for monthly digital coaching sessions',
   '3–20 volunteers or staff for the Follow-Up Centre',
   'Heart for one-on-one discipleship and follow-up',
