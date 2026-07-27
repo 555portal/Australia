@@ -1379,6 +1379,15 @@ h1 { animation-delay: 0.22s; }
 }
 
 /* ── GALLERY ── */
+.survey-bar {
+  background: white;
+  padding: 24px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e8edf4;
+}
+
 .gallery-section { background: white; }
 
 .gallery-grid {

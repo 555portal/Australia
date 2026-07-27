@@ -58,6 +58,11 @@ export default function JulyWorkshop() {
         </div>
       </section>
 
+      {/* SURVEY */}
+      <div className="survey-bar">
+        <a href="https://www.menti.com/al7qd7126ho9" target="_blank" rel="noopener noreferrer" className="nav-cta">Summit Survey</a>
+      </div>
+
       {/* GALLERY */}
       <section className="section gallery-section">
         <div className="section-inner">
