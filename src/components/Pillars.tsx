@@ -3,7 +3,7 @@ const pillars = [
     num: '01',
     benefit: 'Train your whole team in digital evangelism',
     title: 'Expert Training in Digital Evangelism',
-    body: "A 3-day intensive workshop led by MII's global team of digital ministry specialists. Covering strategy, content, advertising, persona development, and how to reach your specific mission field online.",
+    body: "MII's global team of digital ministry specialists equip your team across strategy, content, advertising, persona development, and how to reach your specific mission field online.",
   },
   {
     num: '02',
