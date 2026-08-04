@@ -154,7 +154,6 @@ export default function FollowUpForm() {
           </div>
           <div className="webinar-date-options">
             {[
-              { value: 'August 7th — 2:00pm–3:30pm AEST', label: 'August 7th', time: '2:00pm–3:30pm AEST' },
               { value: 'August 11th — 5:00pm–6:30pm AEST', label: 'August 11th', time: '5:00pm–6:30pm AEST' },
             ].map((opt) => (
               <label
