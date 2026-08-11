@@ -5,14 +5,14 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Partner With Us | MII Australia',
-  description: 'How churches and ministry organisations partner with MII Australia — what we bring, what your ministry brings, and the journey from click to church.',
+  description: 'How churches and ministry organisations partner with MII Australia: what we bring, what your ministry brings, and the journey from click to church.',
 }
 
 const miiItems = [
   {
     num: '1',
     title: 'Expert Training in Digital Evangelism',
-    body: 'World-class training in digital evangelism, content strategy, persona development, brand voice, AI in ministry, and audience engagement — delivered by global experts.',
+    body: 'World-class training in digital evangelism, content strategy, persona development, brand voice, AI in ministry, and audience engagement, delivered by global experts.',
   },
   {
     num: '2',
@@ -98,13 +98,13 @@ export default function PartnersPage() {
               <h3>The people who make<br />it personal.</h3>
               <p className="ministry-desc">
                 The Follow-Up Centre is where the gospel moves from a digital response to a real
-                relationship. MII coordinates and runs the platform — your role is to staff it
+                relationship. MII coordinates and runs the platform; your role is to staff it
                 with people who care.
               </p>
               <div className="ministry-callout">
                 <div className="ministry-callout-title">HOW YOUR MINISTRY GETS INVOLVED</div>
                 <p>
-                  Your ministry can take part in Outreach, Follow-Up, or Connection — or all
+                  Your ministry can take part in Outreach, Follow-Up, or Connection, or all
                   three. For Follow-Up, that means people ready for online responding, real
                   conversation, and discipleship support, trained and coordinated by MII.
                 </p>

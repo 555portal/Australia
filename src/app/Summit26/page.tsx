@@ -4,7 +4,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Melbourne Workshop — July 21–23 | MII Australia',
+  title: 'Melbourne Workshop, July 21–23 | MII Australia',
   description: 'Photos and resources from the Melbourne Digital Pathways Summit.',
 }
 
@@ -53,7 +53,7 @@ export default function JulyWorkshop() {
         <div className="workshop-hero-bg" />
         <div className="workshop-hero-overlay" />
         <div className="workshop-hero-body">
-          <div className="eyebrow">Melbourne, VIC — July 21–23</div>
+          <div className="eyebrow">Melbourne, VIC · July 21–23</div>
           <h1>Digital Pathways Summit 2026</h1>
         </div>
 
@@ -83,7 +83,7 @@ export default function JulyWorkshop() {
           <div className="section-tag">Overview</div>
           <h2>A first for Australia.</h2>
           <p className="lead">
-            The Digital Pathways Summit was the first event of its kind in Australia — three days
+            The Digital Pathways Summit was the first event of its kind in Australia: three days
             that brought together innovators and ministry leaders from across the country to
             reimagine what digital evangelism and follow-up could look like here. From hands-on
             workshops to honest conversation about what&rsquo;s working, the summit set the tone

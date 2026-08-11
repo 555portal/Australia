@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Reports | MII Australia',
-  description: 'Impact reports for MII Australia — coming soon.',
+  description: 'Impact reports for MII Australia, coming soon.',
 }
 
 export default function ReportsPage() {

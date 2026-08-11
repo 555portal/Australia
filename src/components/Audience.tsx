@@ -3,7 +3,7 @@ import Link from 'next/link'
 const cards = [
   {
     title: 'Churches',
-    body: "You're already reaching people — this brings greater intentionality to it, giving your team the tools and support to see real gospel impact online, and real people show up in community.",
+    body: "You're already reaching people; this brings greater intentionality to it, giving your team the tools and support to see real gospel impact online, and real people show up in community.",
     items: [
       'Reach beyond your existing congregation',
       'Turn digital content into a discipleship pathway',

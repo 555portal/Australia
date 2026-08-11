@@ -23,7 +23,7 @@ export default function Stats() {
         <div className="stats-section-tag">A Decade of Proven Impact</div>
         <p className="stats-section-lead">
           MII has spent more than ten years building the infrastructure, training, and relationships
-          that turn digital engagement into genuine discipleship — around the world.
+          that turn digital engagement into genuine discipleship, around the world.
         </p>
         <div className="stats-section-grid">
           {stats.map((s) => (

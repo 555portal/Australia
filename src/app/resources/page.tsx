@@ -5,20 +5,20 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Resources | MII Australia',
-  description: 'Resources for MII Australia ministry partners — Summit 2026 presentations and the MII Podcast.',
+  description: 'Resources for MII Australia ministry partners: Summit 2026 presentations and the MII Podcast.',
 }
 
 const items = [
   {
     title: 'Summit 2026 Recap',
-    body: 'Presentations and photos from the Digital Pathways Summit — Australia’s first event of its kind, covering digital evangelism, content strategy, and follow-up.',
+    body: 'Presentations and photos from the Digital Pathways Summit, Australia’s first event of its kind, covering digital evangelism, content strategy, and follow-up.',
     href: '/Summit26',
     cta: 'View the recap',
     external: false,
   },
   {
     title: 'MII Podcast',
-    body: 'Conversations from the MII team on digital evangelism, follow-up, and reaching people online — a great place to go deeper between sessions.',
+    body: 'Conversations from the MII team on digital evangelism, follow-up, and reaching people online. A great place to go deeper between sessions.',
     href: 'https://www.mii.global/podcast',
     cta: 'Listen now',
     external: true,

@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
         <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; background: #f4f6f9; padding: 32px;">
           <div style="background: #022F5D; padding: 24px 32px; margin-bottom: 0;">
             <h1 style="color: white; font-size: 20px; margin: 0; font-weight: 700;">Follow Up Centre Registration</h1>
-            <p style="color: rgba(255,255,255,0.6); font-size: 13px; margin: 4px 0 0;">Ministry Registration — australia.mii.global</p>
+            <p style="color: rgba(255,255,255,0.6); font-size: 13px; margin: 4px 0 0;">Ministry Registration · australia.mii.global</p>
           </div>
 
           <div style="background: white; padding: 32px; border-left: 4px solid #1877F2;">
@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
               </tr>
               <tr style="border-bottom: 1px solid #f0f0f0;">
                 <td style="padding: 10px 0; color: #5A6A7A; font-weight: 600;">Phone</td>
-                <td style="padding: 10px 0; color: #022F5D;">${phone || '—'}</td>
+                <td style="padding: 10px 0; color: #022F5D;">${phone || 'Not provided'}</td>
               </tr>
               <tr style="border-bottom: 1px solid #f0f0f0;">
                 <td style="padding: 10px 0; color: #5A6A7A; font-weight: 600;">Organisation</td>
@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
               </tr>
               <tr style="border-bottom: 1px solid #f0f0f0;">
                 <td style="padding: 10px 0; color: #5A6A7A; font-weight: 600;">Location</td>
-                <td style="padding: 10px 0; color: #022F5D;">${location || '—'}</td>
+                <td style="padding: 10px 0; color: #022F5D;">${location || 'Not provided'}</td>
               </tr>
             </table>
 

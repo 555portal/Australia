@@ -8,7 +8,7 @@ export default function Partnership() {
         <h2>What we do together.</h2>
         <p className="lead">
           MII provides the structure, training, platform, and coaching. Your ministry provides
-          the people who make follow-up personal — from that first click, all the way home to
+          the people who make follow-up personal, from that first click, all the way home to
           a local church.
         </p>
         <Link href="/partners" className="btn-primary">See How Partnership Works</Link>

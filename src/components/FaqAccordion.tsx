@@ -5,7 +5,7 @@ import { useState } from 'react'
 const faqs = [
   {
     q: 'What is the Follow-Up Centre?',
-    a: "It's Australia's first online Follow-Up Centre — a platform MII built and coordinates, where people who respond to digital evangelism (social media, radio, and more) are met by a real person, not left to a chatbot or a dead end. Ministry partners provide trained volunteers who do online responding and walk seekers toward real community.",
+    a: "It's Australia's first online Follow-Up Centre, a platform MII built and coordinates, where people who respond to digital evangelism (social media, radio, and more) are met by a real person, not left to a chatbot or a dead end. Ministry partners provide trained volunteers who do online responding and walk seekers toward real community.",
   },
   {
     q: 'Who can partner with MII?',
@@ -13,15 +13,15 @@ const faqs = [
   },
   {
     q: 'What does our ministry need to provide?',
-    a: "It depends how you're involved — your ministry can take part in Outreach, Follow-Up, or Connection, or all three. For Follow-Up specifically, that means people (we call them Online Responders, or Echo Users) ready for online responding and discipleship support. MII trains and coordinates them — your ministry just provides the people who care.",
+    a: "It depends how you're involved: your ministry can take part in Outreach, Follow-Up, or Connection, or all three. For Follow-Up specifically, that means people (we call them Online Responders, or Echo Users) ready for online responding and discipleship support. MII trains and coordinates them; your ministry just provides the people who care.",
   },
   {
     q: 'What training and support do we get?',
-    a: "Expert training in digital evangelism — strategy, content, advertising, persona development, AI in ministry, and audience engagement — plus ongoing monthly coaching with MII's senior strategists, and full access to the Follow-Up Centre platform itself.",
+    a: "Expert training in digital evangelism: strategy, content, advertising, persona development, AI in ministry, and audience engagement, plus ongoing monthly coaching with MII's senior strategists, and full access to the Follow-Up Centre platform itself.",
   },
   {
     q: 'Is there a cohort we need to wait for, or a deadline to apply by?',
-    a: "No — partnering with MII is open and ongoing. There's no cohort intake or limited-places model; your ministry can be onboarded whenever you're ready.",
+    a: "No, partnering with MII is open and ongoing. There's no cohort intake or limited-places model; your ministry can be onboarded whenever you're ready.",
   },
   {
     q: 'What does the journey actually look like for a seeker?',
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: 'What happens to people once they come to faith?',
-    a: "If your ministry opts in to Connection, new believers from the Follow-Up Centre can be introduced to Alpha (online or in person) or handed straight to your church — so the journey doesn't end at a digital conversation, it ends in belonging.",
+    a: "If your ministry opts in to Connection, new believers from the Follow-Up Centre can be introduced to Alpha (online or in person) or handed straight to your church. The journey doesn't end at a digital conversation, it ends in belonging.",
   },
   {
     q: 'How is this different from just running our own social media or ads?',
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'How do we get started?',
-    a: 'Register your ministry through our registration page — from there, MII’s team will be in touch to onboard you into the Follow-Up Centre and get your Online Responders trained.',
+    a: 'Register your ministry through our registration page. From there, MII’s team will be in touch to onboard you into the Follow-Up Centre and get your Online Responders trained.',
   },
 ]
 

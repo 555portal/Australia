@@ -9,7 +9,7 @@ const links = [
   { label: 'Resources', href: '/resources' },
   { label: 'Reports', href: '/reports' },
   { label: 'Partners', href: '/partners' },
-  { label: 'Summit 2026 — Recap', href: '/Summit26' },
+  { label: 'Summit 2026 Recap', href: '/Summit26' },
   { label: 'FAQ', href: '/faq' },
 ]
 

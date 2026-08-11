@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero-bg" />
       <div className="hero-overlay" />
       <div className="hero-body">
-        <div className="eyebrow">Media Impact International — Australia</div>
+        <div className="eyebrow">Media Impact International · Australia</div>
         <h1>
           Digital<br />
           <span className="accent">Missions Hub</span>
@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
         <div className="stat">
           <div className="stat-num">Open</div>
-          <div className="stat-label">Ongoing Partnership — No Cohort Dates</div>
+          <div className="stat-label">Ongoing Partnership · No Cohort Dates</div>
         </div>
       </div>
     </section>
