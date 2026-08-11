@@ -8,8 +8,8 @@ export default function Hero() {
       <div className="hero-body">
         <div className="eyebrow">Media Impact International — Australia</div>
         <h1>
-          Australia&rsquo;s<br />
-          <span className="accent">Digital Hub</span>
+          Digital<br />
+          <span className="accent">Missions Hub</span>
         </h1>
         <p className="hero-sub">
           People are already searching for hope online. We help your ministry reach them,
