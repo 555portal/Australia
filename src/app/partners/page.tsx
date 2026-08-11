@@ -29,7 +29,7 @@ const miiItems = [
 const ministryItems = [
   'Committed to training',
   'Available for monthly digital coaching sessions',
-  '3–20 volunteers or staff for the Follow-Up Centre',
+  'Volunteers or staff ready for online responding',
   'Heart for one-on-one discipleship and follow-up',
 ]
 
@@ -102,10 +102,11 @@ export default function PartnersPage() {
                 with people who care.
               </p>
               <div className="ministry-callout">
-                <div className="ministry-callout-title">FOLLOW-UP CENTRE VOLUNTEERS / STAFF</div>
+                <div className="ministry-callout-title">HOW YOUR MINISTRY GETS INVOLVED</div>
                 <p>
-                  We ask that your ministry provide <strong>3–20 people</strong> available for online
-                  care, conversation, and discipleship support — trained and coordinated by MII.
+                  Your ministry can take part in Outreach, Follow-Up, or Connection — or all
+                  three. For Follow-Up, that means people ready for online responding, real
+                  conversation, and discipleship support, trained and coordinated by MII.
                 </p>
               </div>
               <ul className="ministry-list">

@@ -4,22 +4,6 @@ import { useState } from 'react'
 
 type FormState = 'idle' | 'loading' | 'success' | 'error'
 
-type Missionary = {
-  id: number
-  firstName: string
-  lastName: string
-  email: string
-  phone: string
-}
-
-const emptyMissionary = (id: number): Missionary => ({
-  id,
-  firstName: '',
-  lastName: '',
-  email: '',
-  phone: '',
-})
-
 export default function FollowUpForm() {
   const [formState, setFormState] = useState<FormState>('idle')
   const [errorMsg, setErrorMsg] = useState('')
@@ -33,27 +17,8 @@ export default function FollowUpForm() {
     location: '',
   })
 
-  const [missionaries, setMissionaries] = useState<Missionary[]>([emptyMissionary(1)])
-  const [nextId, setNextId] = useState(2)
-  const [webinarDate, setWebinarDate] = useState('')
-
   function updateContact(field: string, value: string) {
     setContact((prev) => ({ ...prev, [field]: value }))
-  }
-
-  function updateMissionary(id: number, field: string, value: string) {
-    setMissionaries((prev) =>
-      prev.map((m) => (m.id === id ? { ...m, [field]: value } : m))
-    )
-  }
-
-  function addMissionary() {
-    setMissionaries((prev) => [...prev, emptyMissionary(nextId)])
-    setNextId((n) => n + 1)
-  }
-
-  function removeMissionary(id: number) {
-    setMissionaries((prev) => prev.filter((m) => m.id !== id))
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -65,7 +30,7 @@ export default function FollowUpForm() {
       const res = await fetch('/api/submit-missionaries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ contact, missionaries, webinarDate }),
+        body: JSON.stringify({ contact }),
       })
 
       if (!res.ok) throw new Error('Submission failed')
@@ -83,8 +48,8 @@ export default function FollowUpForm() {
           <div className="section-tag">Follow Up Centre</div>
           <h2>Registration received.</h2>
           <p className="lead">
-            Thank you. Your Online Missionaries have been registered. The MII Australia team will
-            be in touch shortly with next steps.
+            Thank you. Your ministry has been registered. The MII Australia team will be in touch
+            shortly with next steps.
           </p>
         </div>
       </section>
@@ -95,11 +60,10 @@ export default function FollowUpForm() {
     <section className="eoi" id="register">
       <div className="eoi-inner" style={{ maxWidth: '780px' }}>
         <div className="section-tag">Follow Up Centre</div>
-        <h2>Register your Echo Users.</h2>
-        <p className="webinar-coming-soon">Training Webinar — select a date that works for you.</p>
+        <h2>Register Your Ministry.</h2>
         <p className="lead">
-          Add the details of each person from your ministry who will be serving as an Online
-          Missionary (Echo User) through the Follow Up Centre.
+          Tell us a bit about your ministry, and the MII Australia team will be in touch about
+          getting started with the Follow Up Centre.
         </p>
 
         <div className="form-card">
@@ -147,86 +111,10 @@ export default function FollowUpForm() {
             </div>
           </div>
 
-          {/* ── WEBINAR DATE ── */}
-          <div className="form-section-header" style={{ marginTop: '12px' }}>
-            Training Webinar Date
-            <span className="form-section-sub">Select the session that works best for your team.</span>
-          </div>
-          <div className="webinar-date-options">
-            {[
-              { value: 'August 11th — 5:00pm–6:30pm AEST', label: 'August 11th', time: '5:00pm–6:30pm AEST' },
-            ].map((opt) => (
-              <label
-                key={opt.value}
-                className={`webinar-date-option${webinarDate === opt.value ? ' webinar-date-option--selected' : ''}`}
-              >
-                <input
-                  type="radio"
-                  name="webinarDate"
-                  value={opt.value}
-                  checked={webinarDate === opt.value}
-                  onChange={() => setWebinarDate(opt.value)}
-                  required
-                />
-                <span className="webinar-date-label">{opt.label}</span>
-                <span className="webinar-date-time">{opt.time}</span>
-              </label>
-            ))}
-          </div>
-
-          {/* ── MISSIONARIES ── */}
-          <div className="form-section-header" style={{ marginTop: '12px' }}>
-            Online Missionaries
-            <span className="form-section-sub">Add each person who will serve in the Follow Up Centre.</span>
-          </div>
-
-          {missionaries.map((m, index) => (
-            <div className="attendee-card" key={m.id}>
-              <div className="attendee-card-header">
-                <span className="attendee-label">Echo User {index + 1}</span>
-                {missionaries.length > 1 && (
-                  <button type="button" className="attendee-remove" onClick={() => removeMissionary(m.id)}>
-                    Remove
-                  </button>
-                )}
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label>First Name</label>
-                  <input type="text" placeholder="First name" required
-                    value={m.firstName} onChange={(e) => updateMissionary(m.id, 'firstName', e.target.value)} />
-                </div>
-                <div className="form-group">
-                  <label>Last Name</label>
-                  <input type="text" placeholder="Last name" required
-                    value={m.lastName} onChange={(e) => updateMissionary(m.id, 'lastName', e.target.value)} />
-                </div>
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label>Email</label>
-                  <input type="email" placeholder="Email address" required
-                    value={m.email} onChange={(e) => updateMissionary(m.id, 'email', e.target.value)} />
-                </div>
-                <div className="form-group">
-                  <label>Phone</label>
-                  <input type="tel" placeholder="Phone number"
-                    value={m.phone} onChange={(e) => updateMissionary(m.id, 'phone', e.target.value)} />
-                </div>
-              </div>
-            </div>
-          ))}
-
-          <button type="button" className="btn-add-attendee" onClick={addMissionary}>
-            + Add Another Echo User
-          </button>
-
           {/* ── SUBMIT ── */}
           <div style={{ marginTop: '8px' }}>
             <button type="submit" className="btn-submit" disabled={formState === 'loading'}>
-              {formState === 'loading' ? 'Submitting…' : 'Register Missionaries'}
+              {formState === 'loading' ? 'Submitting…' : 'Register Your Ministry'}
             </button>
             {formState === 'error' && <p className="form-error">{errorMsg}</p>}
             <p className="form-note">Your details will only be used in connection with the MII Follow Up Centre program.</p>

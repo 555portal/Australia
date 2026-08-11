@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Register Your Ministry | MII Australia',
-  description: 'Register your Echo Users and join the Follow Up Centre — Australia’s online follow-up hub connecting seekers to real Christian community.',
+  description: 'Register your ministry and join the Follow Up Centre — Australia’s online follow-up hub connecting seekers to real Christian community.',
 }
 
 export default function RegisterPage() {

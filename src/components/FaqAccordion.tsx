@@ -5,7 +5,7 @@ import { useState } from 'react'
 const faqs = [
   {
     q: 'What is the Follow-Up Centre?',
-    a: "It's Australia's first online Follow-Up Centre — a platform MII built and coordinates, where people who respond to digital evangelism (social media, radio, and more) are met by a real person, not left to a chatbot or a dead end. Ministry partners provide trained volunteers who respond, counsel, and walk seekers toward real community.",
+    a: "It's Australia's first online Follow-Up Centre — a platform MII built and coordinates, where people who respond to digital evangelism (social media, radio, and more) are met by a real person, not left to a chatbot or a dead end. Ministry partners provide trained volunteers who do online responding and walk seekers toward real community.",
   },
   {
     q: 'Who can partner with MII?',
@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: 'What does our ministry need to provide?',
-    a: "3–20 people (we call them Online Missionaries, or Echo Users) available for online care, conversation, and discipleship support. MII trains and coordinates them — your ministry just provides the people who care.",
+    a: "It depends how you're involved — your ministry can take part in Outreach, Follow-Up, or Connection, or all three. For Follow-Up specifically, that means people (we call them Online Responders, or Echo Users) ready for online responding and discipleship support. MII trains and coordinates them — your ministry just provides the people who care.",
   },
   {
     q: 'What training and support do we get?',
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'How do we get started?',
-    a: 'Register your ministry and your Online Missionaries through our registration page — from there, MII’s team onboards you into the Follow-Up Centre and gets your volunteers trained.',
+    a: 'Register your ministry through our registration page — from there, MII’s team will be in touch to onboard you into the Follow-Up Centre and get your Online Responders trained.',
   },
 ]
 
