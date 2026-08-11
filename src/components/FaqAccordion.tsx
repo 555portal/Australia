@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: 'What does our ministry need to provide?',
-    a: "3–20 people (we call them Online Missionaries, or Echo Users) available for online counselling, conversation, and discipleship support. MII trains and coordinates them — your ministry just provides the people who care.",
+    a: "3–20 people (we call them Online Missionaries, or Echo Users) available for online care, conversation, and discipleship support. MII trains and coordinates them — your ministry just provides the people who care.",
   },
   {
     q: 'What training and support do we get?',
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: 'What does the journey actually look like for a seeker?',
-    a: 'Click → Conversation → Counselling → Community → Church. It starts with digital engagement, moves into a real one-on-one conversation and counselling support, and from there into online small groups and, ultimately, a local church.',
+    a: 'Click → Conversation → Care → Community → Church. It starts with digital engagement, moves into a real one-on-one conversation and ongoing care, and from there into online small groups and, ultimately, a local church.',
   },
   {
     q: 'What happens to people once they come to faith?',

@@ -36,7 +36,7 @@ const ministryItems = [
 const journey = [
   { step: 'Click', desc: 'Digital engagement' },
   { step: 'Conversation', desc: 'Personal response' },
-  { step: 'Counselling', desc: 'One-on-one support' },
+  { step: 'Care', desc: 'One-on-one support' },
   { step: 'Community', desc: 'Online small groups' },
   { step: 'Church', desc: 'Local integration' },
 ]
@@ -105,7 +105,7 @@ export default function PartnersPage() {
                 <div className="ministry-callout-title">FOLLOW-UP CENTRE VOLUNTEERS / STAFF</div>
                 <p>
                   We ask that your ministry provide <strong>3–20 people</strong> available for online
-                  counselling, conversation, and discipleship support — trained and coordinated by MII.
+                  care, conversation, and discipleship support — trained and coordinated by MII.
                 </p>
               </div>
               <ul className="ministry-list">
