@@ -19,7 +19,16 @@ export default function ResourcesPage() {
           <p className="lead">
             A library of resources for ministry partners is coming soon. In the meantime, check
             out the presentations and materials from{' '}
-            <Link href="/Summit26" style={{ color: 'var(--blue)' }}>Summit 2026</Link>.
+            <Link href="/Summit26" style={{ color: 'var(--blue)' }}>Summit 2026</Link>, or listen
+            to the{' '}
+            <a
+              href="https://www.mii.global/podcast"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'var(--blue)' }}
+            >
+              MII Podcast
+            </a>.
           </p>
         </div>
       </section>
