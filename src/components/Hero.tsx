@@ -6,37 +6,38 @@ export default function Hero() {
       <div className="hero-bg" />
       <div className="hero-overlay" />
       <div className="hero-body">
-        <div className="eyebrow">Media Impact International — 2026 Cohort</div>
+        <div className="eyebrow">Media Impact International — Australia</div>
         <h1>
-          Transform Your<br />
-          <span className="accent">Digital Ministry</span>
+          Australia&rsquo;s<br />
+          <span className="accent">Digital Hub</span>
         </h1>
         <p className="hero-sub">
-          Your digital outreach is reaching people. This program helps you respond,
-          disciple, and connect them to real Christian community.
+          People are already searching for hope online. We help your ministry reach them,
+          walk with them through Australia&rsquo;s first online Follow-Up Centre, and connect
+          them to a real, local Christian community.
         </p>
         <div className="hero-actions">
-          <Link href="#eoi" className="btn-primary">Register Your Interest</Link>
-          <Link href="#about" className="btn-ghost">Learn More</Link>
+          <Link href="/register" className="btn-primary">Register Your Ministry</Link>
+          <Link href="#pillars" className="btn-ghost">See How It Works</Link>
         </div>
       </div>
 
       <div className="stats-bar">
         <div className="stat">
-          <div className="stat-num">1 Year</div>
-          <div className="stat-label">Structured Program</div>
+          <div className="stat-num">12+ Years</div>
+          <div className="stat-label">Global Digital Ministry Experience</div>
         </div>
         <div className="stat">
-          <div className="stat-num">3 Pillars</div>
-          <div className="stat-label">Training &middot; Platform &middot; Follow-Up</div>
+          <div className="stat-num">6M+</div>
+          <div className="stat-label">People Responded To</div>
         </div>
         <div className="stat">
-          <div className="stat-num">Global</div>
-          <div className="stat-label">MII Expertise &amp; Network</div>
+          <div className="stat-num">1st</div>
+          <div className="stat-label">Online Follow-Up Centre in Australia</div>
         </div>
         <div className="stat">
-          <div className="stat-num">Limited</div>
-          <div className="stat-label">Places Available</div>
+          <div className="stat-num">Open</div>
+          <div className="stat-label">Ongoing Partnership — No Cohort Dates</div>
         </div>
       </div>
     </section>

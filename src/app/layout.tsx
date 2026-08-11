@@ -4,10 +4,10 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Media Impact International',
-  description: 'A world-class, year-long program equipping Australian churches and parachurch organisations with the training, technology, and coaching to reach, engage, and disciple people online.',
+  description: 'Australia\'s Digital Hub — helping churches and ministries reach seekers online, walk with them through the Follow-Up Centre, and connect them to real Christian community.',
   openGraph: {
     title: 'Media Impact International',
-    description: 'Transform your digital ministry in one year. Register your expression of interest for the 2026 cohort.',
+    description: 'Australia\'s Digital Hub — outreach, follow-up, and connection to real Christian community.',
     url: 'https://mii.global',
     siteName: 'Media Impact International',
     images: [{ url: '/hero.jpg', width: 1280, height: 853 }],

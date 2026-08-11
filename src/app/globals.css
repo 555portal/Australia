@@ -66,6 +66,51 @@ nav {
 }
 .nav-cta:hover { background: var(--blue-bright); }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.nav-link:hover { color: white; }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.nav-toggle--open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle--open span:nth-child(2) { opacity: 0; }
+.nav-toggle--open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav-mobile-menu { display: none; }
+
 /* ── HERO ── */
 .hero {
   background: var(--navy);
@@ -1023,9 +1068,113 @@ h1 { animation-delay: 0.22s; }
 .hero-sub { animation-delay: 0.36s; }
 .hero-actions { animation-delay: 0.5s; }
 
+/* ── PARTNERSHIP TEASER (homepage) ── */
+.partnership-teaser {
+  background: var(--navy);
+  padding: 90px 60px;
+  text-align: center;
+}
+.partnership-teaser .section-inner { max-width: 680px; }
+.partnership-teaser .section-tag { color: var(--blue-bright); }
+.partnership-teaser h2 { color: white; }
+.partnership-teaser .lead { color: rgba(255,255,255,0.6); margin: 0 auto 36px; }
+
+/* ── FAQ ── */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 48px;
+}
+
+.faq-item {
+  background: white;
+  border-left: 4px solid var(--blue);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue);
+  line-height: 1;
+  transition: transform 0.2s;
+}
+.faq-item--open .faq-icon { transform: rotate(45deg); }
+
+.faq-answer {
+  padding: 0 28px 24px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* ── COMING SOON PLACEHOLDER ── */
+.coming-soon {
+  min-height: 44vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.coming-soon-inner { max-width: 480px; margin: 0 auto; }
+.coming-soon .section-tag { justify-content: center; }
+.coming-soon .lead { margin: 0 auto; }
+
 /* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .nav-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    border-bottom: 3px solid var(--blue);
+    padding: 12px 24px 24px;
+    gap: 2px;
+    z-index: 99;
+  }
+  .nav-mobile-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    padding: 14px 4px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-mobile-link:hover { color: white; }
+  .nav-mobile-cta { margin-top: 14px; text-align: center; }
+}
+
 @media (max-width: 768px) {
   nav { padding: 0 20px; }
+  .partnership-teaser { padding: 60px 24px; }
+  .faq-question { padding: 18px 20px; font-size: 14px; }
+  .faq-answer { padding: 0 20px 20px; }
   .hero { padding: 60px 24px 0; min-height: auto; }
   .hero-actions { margin-bottom: 48px; }
   .stats-bar { grid-template-columns: 1fr 1fr; }
@@ -1403,6 +1552,12 @@ h1 { animation-delay: 0.22s; }
   margin-top: 40px;
 }
 
+.gallery-grid--compact {
+  columns: 6;
+  column-gap: 8px;
+  max-width: 900px;
+}
+
 .gallery-item {
   break-inside: avoid;
   margin-bottom: 12px;
@@ -1419,10 +1574,12 @@ h1 { animation-delay: 0.22s; }
 
 @media (max-width: 768px) {
   .gallery-grid { columns: 2; }
+  .gallery-grid--compact { columns: 3; }
 }
 
 @media (max-width: 480px) {
   .gallery-grid { columns: 1; }
+  .gallery-grid--compact { columns: 2; }
 }
 
 /* ── RESOURCES ── */

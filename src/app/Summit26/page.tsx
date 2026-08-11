@@ -46,41 +46,49 @@ const galleryPhotos = [
 export default function JulyWorkshop() {
   return (
     <>
-      <Nav ctaLabel="Register Follow Up" ctaHref="/" />
+      <Nav />
 
       {/* HERO */}
-      <section className="workshop-hero" style={{ minHeight: '280px' }}>
+      <section className="workshop-hero" style={{ minHeight: '440px' }}>
         <div className="workshop-hero-bg" />
         <div className="workshop-hero-overlay" />
-        <div className="workshop-hero-body" style={{ paddingBottom: '48px' }}>
+        <div className="workshop-hero-body">
+          <div className="eyebrow">Melbourne, VIC — July 21–23</div>
           <h1>Digital Pathways Summit 2026</h1>
+        </div>
+
+        <div className="workshop-hero-stats">
+          <div className="stat">
+            <div className="stat-num">3 Days</div>
+            <div className="stat-label">Of Workshops & Connection</div>
+          </div>
+          <div className="stat">
+            <div className="stat-num">13 Sessions</div>
+            <div className="stat-label">On Digital Ministry & Follow-Up</div>
+          </div>
+          <div className="stat">
+            <div className="stat-num">5 Speakers</div>
+            <div className="stat-label">Global & Local Experts</div>
+          </div>
+          <div className="stat">
+            <div className="stat-num">1st</div>
+            <div className="stat-label">Event of Its Kind in Australia</div>
+          </div>
         </div>
       </section>
 
-      {/* SURVEY */}
-      <div className="survey-bar">
-        <a href="https://www.menti.com/al7qd7126ho9" target="_blank" rel="noopener noreferrer" className="nav-cta">Summit Survey</a>
-      </div>
-
-      {/* GALLERY */}
-      <section className="section gallery-section">
+      {/* OVERVIEW */}
+      <section className="section" style={{ background: 'white' }}>
         <div className="section-inner">
-          <div className="section-tag">Photos</div>
-          <h2>From the summit.</h2>
-          <div className="gallery-grid">
-            {galleryPhotos.map((photo) => (
-              <div className="gallery-item" key={photo}>
-                <Image
-                  src={`/gallery/${photo}`}
-                  alt="Digital Pathways Summit"
-                  width={800}
-                  height={600}
-                  style={{ width: '100%', height: 'auto', display: 'block' }}
-                  className="gallery-img"
-                />
-              </div>
-            ))}
-          </div>
+          <div className="section-tag">Overview</div>
+          <h2>A first for Australia.</h2>
+          <p className="lead">
+            The Digital Pathways Summit was the first event of its kind in Australia — three days
+            that brought together innovators and ministry leaders from across the country to
+            reimagine what digital evangelism and follow-up could look like here. From hands-on
+            workshops to honest conversation about what&rsquo;s working, the summit set the tone
+            for a new season of digital ministry in Australia.
+          </p>
         </div>
       </section>
 
@@ -114,6 +122,28 @@ export default function JulyWorkshop() {
                 </div>
                 <div className="resource-dl">Download</div>
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section className="section gallery-section">
+        <div className="section-inner">
+          <div className="section-tag">Photos</div>
+          <h2>From the summit.</h2>
+          <div className="gallery-grid gallery-grid--compact">
+            {galleryPhotos.map((photo) => (
+              <div className="gallery-item" key={photo}>
+                <Image
+                  src={`/gallery/${photo}`}
+                  alt="Digital Pathways Summit"
+                  width={800}
+                  height={600}
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                  className="gallery-img"
+                />
+              </div>
             ))}
           </div>
         </div>
